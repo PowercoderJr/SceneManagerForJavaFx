@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="400" prefWidth="600" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainSceneController">
+   <rowConstraints>
+      <RowConstraints minHeight="50.0" prefHeight="50.0" />
+      <RowConstraints prefHeight="400.0" />
+      <RowConstraints minHeight="10.0" prefHeight="400.0" />
+      <RowConstraints minHeight="10.0" prefHeight="400.0" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints halignment="CENTER" prefWidth="600.0" />
+   </columnConstraints>
+   <children>
+      <Label text="Imagine you are standing across from the door" textAlignment="CENTER" GridPane.rowIndex="1">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button mnemonicParsing="false" onAction="#enter" text="ENTER THE DOOR" GridPane.rowIndex="2">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#back" text="NO, I'M NOT" GridPane.rowIndex="3">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Label text="0 scenes in stack behind this now" />
+   </children>
+</GridPane>

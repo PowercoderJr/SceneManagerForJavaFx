@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="pane" alignment="center" hgap="10" prefHeight="400" prefWidth="600" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RoomSceneController">
+   <rowConstraints>
+      <RowConstraints minHeight="50.0" prefHeight="50.0" />
+      <RowConstraints prefHeight="400.0" />
+      <RowConstraints minHeight="10.0" prefHeight="400.0" />
+      <RowConstraints minHeight="10.0" prefHeight="400.0" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints halignment="CENTER" prefWidth="600.0" />
+   </columnConstraints>
+   <children>
+      <Label text="... and there are 3 more doors!&#10;Which one will you choose now?" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="1">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0" GridPane.rowIndex="2">
+         <children>
+            <Button mnemonicParsing="false" onAction="#enter" prefHeight="90.0" prefWidth="170.0" text="ENTER THE&#10;RED DOOR" textAlignment="CENTER" userData="#FFCCCC" wrapText="true">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#enter" prefHeight="90.0" prefWidth="170.0" text="ENTER THE&#10;YELLOW DOOR" textAlignment="CENTER" userData="#FFFFCC" wrapText="true">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#enter" prefHeight="90.0" prefWidth="170.0" text="ENTER THE&#10;GREEN DOOR" textAlignment="CENTER" userData="#CCFFCC" wrapText="true">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <GridPane hgap="200.0" GridPane.rowIndex="3">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#back" prefHeight="90.0" prefWidth="170.0" text="GO BACK" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#leave" prefHeight="90.0" prefWidth="170.0" text="LEAVE THE BUILDING" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <Label fx:id="stackSizeLabel" text="..." textAlignment="CENTER" />
+   </children>
+</GridPane>
